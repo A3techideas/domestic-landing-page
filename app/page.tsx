@@ -313,7 +313,7 @@ export default function Home() {
       {/* Why Choose A3 Tech Ideas Section */}
       <section className="px-4 sm:px-8 py-16 sm:py-20 lg:py-30 lg:px-16">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black text-center mb-8 sm:mb-12">Why Choose A3 Tech Ideas?</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black text-center mb-8 sm:mb-12">Why Choose A3Ideanix?</h2>
           <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-y-10 sm:gap-8 lg:gap-x-12 lg:gap-y-16">
             {/* Proven experience */}
             <div className="bg-white rounded-lg px-6 sm:px-8 lg:px-10 py-6 sm:py-8 shadow-sm border border-[#313131] flex flex-col items-center justify-center relative pt-10 sm:pt-12 lg:pt-14 min-h-[160px] sm:min-h-[180px]">
