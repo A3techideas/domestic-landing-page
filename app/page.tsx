@@ -138,22 +138,22 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden w-full max-w-full">
       {/* Header */}
-      <header className="flex items-center justify-between px-4 sm:px-8 py-4 sm:py-6">
+      <header className="flex items-center justify-between px-4 sm:px-8 py-4 sm:py-4 pb-2 sm:pb-3 overflow-x-hidden w-full max-w-full">
         <div className="flex items-center gap-3">
         <Image
             src="/a3.svg"
             alt="A3 Tech Ideas Logo"
             width={180}
             height={60}
-            className="w-[120px] sm:w-[150px] h-auto lg:w-[500px] lg:ml-22 lg:mt-5"
+            className="w-[120px] sm:w-[150px] h-auto lg:w-[500px] lg:ml-20 lg:mt-5 max-w-full"
           priority
         />
         </div>
         <div className="flex items-center gap-3">
           <div
-            className={`flex items-center gap-2 transition-all duration-300 ease-in-out origin-right ${
+            className={`flex items-center gap-2 transition-all duration-300 ease-in-out origin-right flex-shrink-0 ${
               showPhone
                 ? "max-w-[320px] opacity-100 translate-x-0"
                 : "max-w-0 opacity-0 translate-x-2"
@@ -197,9 +197,9 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-12 sm:py-16 md:py-20 lg:py-24 relative pb-20 sm:pb-28 md:pb-32 lg:pb-36 xl:pb-40">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-start">
-          <div className="w-full max-w-3xl md:pl-4 lg:pl-8 xl:pl-12 2xl:pl-16">
+      <section className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 pt-4 sm:pt-6 md:pt-8 lg:pt-10 relative pb-20 sm:pb-28 md:pb-32 lg:pb-36 xl:pb-40 overflow-x-hidden w-full max-w-full">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-start w-full">
+          <div className="w-full max-w-3xl md:pl-4 lg:pl-8 xl:pl-12">
             <h1 className="font-bold text-black leading-[1.1] sm:leading-tight tracking-tight text-[clamp(2.25rem,3.8vw,4.5rem)] mb-4 sm:mb-6">
               <span className="block sm:whitespace-nowrap">Transform Your Business with AI,</span>
               <span className="block sm:whitespace-nowrap">Automation & Digital Innovation</span>
@@ -219,7 +219,7 @@ export default function Home() {
               Get Free Consultation
             </button>
           </div>
-          <div className="flex justify-center sm:justify-end items-end lg:absolute lg:right-12 xl:right-16 lg:bottom-12 mt-8 lg:mt-0">
+          <div className="flex justify-center sm:justify-end items-end lg:absolute lg:right-12 xl:right-16 lg:bottom-12 mt-8 lg:mt-0 w-full lg:w-auto overflow-hidden">
             <video
               src="/video.mp4"
               className="w-full max-w-[360px] sm:max-w-[440px] md:max-w-[520px] lg:max-w-[580px] xl:max-w-[620px] rounded-xl"
@@ -237,7 +237,7 @@ export default function Home() {
       </section>
 
       {/* Our Expertise Section */}
-      <section className="px-4 sm:px-8 py-16 sm:py-20 lg:py-24 lg:px-16 bg-gray-50">
+      <section className="px-4 sm:px-8 py-16 sm:py-20 lg:py-24 lg:px-16 bg-gray-50 overflow-x-hidden w-full max-w-full">
     <div className="max-w-7xl mx-auto">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black text-center mb-8 sm:mb-12">Our Expertises</h2>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-y-10 sm:gap-x-8 sm:gap-y-16 lg:gap-y-26">
@@ -311,13 +311,13 @@ export default function Home() {
 </section>
 
       {/* Why Choose A3 Tech Ideas Section */}
-      <section className="px-4 sm:px-8 py-16 sm:py-20 lg:py-30 lg:px-16">
+      <section className="px-4 sm:px-8 py-16 sm:py-20 lg:py-[120px] lg:px-16 overflow-x-hidden w-full max-w-full">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black text-center mb-8 sm:mb-12">Why Choose A3Ideanix?</h2>
           <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-y-10 sm:gap-8 lg:gap-x-12 lg:gap-y-16">
             {/* Proven experience */}
             <div className="bg-white rounded-lg px-6 sm:px-8 lg:px-10 py-6 sm:py-8 shadow-sm border border-[#313131] flex flex-col items-center justify-center relative pt-10 sm:pt-12 lg:pt-14 min-h-[160px] sm:min-h-[180px]">
-              <div className="bg-[#FAFAFA] rounded-full p-3 sm:p-4 lg:p-5 flex items-center justify-center w-20 h-20 sm:w-22 sm:h-22 lg:w-24 lg:h-24 absolute -top-10 sm:-top-11 lg:-top-12 left-1/2 transform -translate-x-1/2">
+              <div className="bg-[#FAFAFA] rounded-full p-3 sm:p-4 lg:p-5 flex items-center justify-center w-20 h-20 sm:w-[88px] sm:h-[88px] lg:w-24 lg:h-24 absolute -top-10 sm:-top-11 lg:-top-12 left-1/2 transform -translate-x-1/2">
                 <svg className="w-10 h-10 sm:w-11 sm:h-11 lg:w-12 lg:h-12 text-[#F47D1F]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
                 </svg>
@@ -326,7 +326,7 @@ export default function Home() {
             </div>
             {/* AI-powered approach */}
             <div className="bg-white rounded-lg px-6 sm:px-8 lg:px-10 py-6 sm:py-8 shadow-sm border border-[#313131] flex flex-col items-center justify-center relative pt-10 sm:pt-12 lg:pt-14 min-h-[160px] sm:min-h-[180px]">
-              <div className="bg-[#FAFAFA] rounded-full p-3 sm:p-4 lg:p-5 flex items-center justify-center w-20 h-20 sm:w-22 sm:h-22 lg:w-24 lg:h-24 absolute -top-10 sm:-top-11 lg:-top-12 left-1/2 transform -translate-x-1/2">
+              <div className="bg-[#FAFAFA] rounded-full p-3 sm:p-4 lg:p-5 flex items-center justify-center w-20 h-20 sm:w-[88px] sm:h-[88px] lg:w-24 lg:h-24 absolute -top-10 sm:-top-11 lg:-top-12 left-1/2 transform -translate-x-1/2">
                 <svg className="w-10 h-10 sm:w-11 sm:h-11 lg:w-12 lg:h-12 text-[#F47D1F]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
                 </svg>
@@ -335,7 +335,7 @@ export default function Home() {
             </div>
             {/* Cloud-secured */}
             <div className="bg-white rounded-lg px-6 sm:px-8 lg:px-10 py-6 sm:py-8 shadow-sm border border-[#313131] flex flex-col items-center justify-center relative pt-10 sm:pt-12 lg:pt-14 min-h-[160px] sm:min-h-[180px]">
-              <div className="bg-[#FAFAFA] rounded-full p-3 sm:p-4 lg:p-5 flex items-center justify-center w-20 h-20 sm:w-22 sm:h-22 lg:w-24 lg:h-24 absolute -top-10 sm:-top-11 lg:-top-12 left-1/2 transform -translate-x-1/2">
+              <div className="bg-[#FAFAFA] rounded-full p-3 sm:p-4 lg:p-5 flex items-center justify-center w-20 h-20 sm:w-[88px] sm:h-[88px] lg:w-24 lg:h-24 absolute -top-10 sm:-top-11 lg:-top-12 left-1/2 transform -translate-x-1/2">
                 <svg className="w-10 h-10 sm:w-11 sm:h-11 lg:w-12 lg:h-12 text-[#F47D1F]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M19.36 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.64-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/>
                 </svg>
@@ -344,7 +344,7 @@ export default function Home() {
             </div>
             {/* Fast delivery */}
             <div className="bg-white rounded-lg px-6 sm:px-8 lg:px-10 py-6 sm:py-8 shadow-sm border border-[#313131] flex flex-col items-center justify-center relative pt-10 sm:pt-12 lg:pt-14 min-h-[160px] sm:min-h-[180px]">
-              <div className="bg-[#FAFAFA] rounded-full p-3 sm:p-4 lg:p-5 flex items-center justify-center w-20 h-20 sm:w-22 sm:h-22 lg:w-24 lg:h-24 absolute -top-10 sm:-top-11 lg:-top-12 left-1/2 transform -translate-x-1/2">
+              <div className="bg-[#FAFAFA] rounded-full p-3 sm:p-4 lg:p-5 flex items-center justify-center w-20 h-20 sm:w-[88px] sm:h-[88px] lg:w-24 lg:h-24 absolute -top-10 sm:-top-11 lg:-top-12 left-1/2 transform -translate-x-1/2">
                 <svg className="w-10 h-10 sm:w-11 sm:h-11 lg:w-12 lg:h-12 text-[#F47D1F]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-2 14H6v-2h12v2zm0-4H6v-2h12v2zm0-4H6V8h12v2z"/>
                 </svg>
@@ -356,13 +356,13 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="px-4 sm:px-8 py-16 sm:py-20 lg:py-30 lg:px-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
+      <section className="px-4 sm:px-8 py-16 sm:py-20 lg:py-30 lg:px-16 bg-gray-50 overflow-x-hidden w-full max-w-full">
+        <div className="max-w-7xl mx-auto w-full">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black text-center mb-8 sm:mb-12">Testimonials</h2>
-          <div className="relative w-full max-w-3xl mx-auto">
-            <div className="overflow-hidden rounded-2xl bg-white/60">
+          <div className="relative w-full max-w-3xl mx-auto overflow-hidden">
+            <div className="overflow-hidden rounded-2xl bg-white/60 w-full">
               <div
-                className="flex transition-transform duration-500 ease-out"
+                className="flex transition-transform duration-500 ease-out w-full"
                 style={{ transform: `translateX(-${activeSlide * 100}%)` }}
               >
                 {testimonials.map((item) => (
@@ -426,7 +426,7 @@ export default function Home() {
       </section>
 
       {/* Lead Form Section */}
-      <section id="request-callback" className="px-4 sm:px-8 py-12 sm:py-16 lg:px-16">
+      <section id="request-callback" className="px-4 sm:px-8 py-12 sm:py-16 lg:px-16 overflow-x-hidden w-full max-w-full">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black text-center mb-8 sm:mb-12">
             Request a Callback
@@ -533,7 +533,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#F56F19] px-4 sm:px-8 py-8 sm:py-12 lg:px-16">
+      <footer className="bg-[#F56F19] px-4 sm:px-8 py-8 sm:py-12 lg:px-16 overflow-x-hidden w-full max-w-full">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-center gap-4 sm:gap-6 mb-6 sm:mb-8">
             <a
