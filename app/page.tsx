@@ -142,14 +142,16 @@ export default function Home() {
       {/* Header */}
       <header className="flex items-center justify-between px-4 sm:px-8 py-4 sm:py-4 pb-2 sm:pb-3 overflow-x-hidden w-full max-w-full">
         <div className="flex items-center gap-3">
-        <Image
-            src="/a3.svg"
-            alt="A3 Tech Ideas Logo"
-            width={180}
-            height={60}
-            className="w-[120px] sm:w-[150px] h-auto lg:w-[500px] lg:ml-20 lg:mt-5 max-w-full"
-          priority
-        />
+          <a href="https://a3ideanix.com/" target="_blank" rel="noopener noreferrer" aria-label="A3 Ideanix website">
+            <Image
+              src="/a3.svg"
+              alt="A3 Tech Ideas Logo"
+              width={180}
+              height={60}
+              className="w-[120px] sm:w-[150px] h-auto lg:w-[500px] lg:ml-20 lg:mt-5 max-w-full cursor-pointer"
+              priority
+            />
+          </a>
         </div>
         <div className="flex items-center gap-3">
           <div
