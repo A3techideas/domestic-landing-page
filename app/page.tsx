@@ -142,7 +142,7 @@ export default function Home() {
       {/* Header */}
       <header className="flex items-center justify-between px-4 sm:px-8 py-4 sm:py-4 pb-2 sm:pb-3 overflow-x-hidden w-full max-w-full">
         <div className="flex items-center gap-3">
-          <a href="https://a3ideanix.com/" target="_blank" rel="noopener noreferrer" aria-label="A3 Ideanix website">
+          <a href="https://www.a3ideanix.com/" target="_blank" rel="noopener noreferrer" aria-label="A3 Ideanix website">
             <Image
               src="/a3.svg"
               alt="A3 Tech Ideas Logo"
