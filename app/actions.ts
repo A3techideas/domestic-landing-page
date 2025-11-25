@@ -25,14 +25,25 @@ export async function submitLead(payload: LeadFormPayload) {
   }
 
   const supabase = supabaseServerClient();
+  const trimmedService = payload.service?.trim();
+  const trimmedCompany = payload.company?.trim();
+  const subject =
+    trimmedService ||
+    "Strategy Call Request — Hub Domestic Landing Page Submission";
 
-  const { error } = await supabase.from("strategy_call_requests").insert({
+  const message = [
+    `Phone: ${payload.phoneCountryCode.trim()} ${payload.phoneNumber.trim()}`,
+    trimmedCompany ? `Company: ${trimmedCompany}` : null,
+    trimmedService ? `Service Interest: ${trimmedService}` : null,
+  ]
+    .filter(Boolean)
+    .join("\n");
+
+  const { error } = await supabase.from("Contacts").insert({
     name: payload.name.trim(),
     email: payload.email.trim(),
-    phone_country_code: payload.phoneCountryCode.trim(),
-    phone_number: payload.phoneNumber.trim(),
-    company: payload.company.trim() || null,
-    service_interest: payload.service.trim() || null,
+    subject,
+    message,
   });
 
   if (error) {
