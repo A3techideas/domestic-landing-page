@@ -22,24 +22,18 @@ const testimonials = [
   {
     id: 2,
     quote:
-      "A3 Ideanix transformed our business operations with AI automation.",
+      "Transforming Our Vision Into a High-Performing Digital Product.",
     author: "CEO, U.S. Retail Startup",
-    image: "/lady.svg",
+    image: "/boy.svg",
   },
   {
     id: 3,
     quote:
-      "A3 Ideanix transformed our business operations with AI automation.",
+      "End-to-End Support Like No Other",
     author: "CEO, U.S. Retail Startup",
-    image: "/lady.svg",
+    image: "/lady2.svg",
   },
-  {
-    id: 4,
-    quote:
-      "A3 Ideanix transformed our business operations with AI automation.",
-    author: "CEO, U.S. Retail Startup",
-    image: "/lady.svg",
-  },
+
 ];
 
 export default function Home() {
@@ -358,7 +352,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="px-4 sm:px-8 py-16 sm:py-20 lg:py-30 lg:px-16 bg-gray-50 overflow-x-hidden w-full max-w-full">
+      <section className="px-4 sm:px-8 py-16 sm:py-20 lg:py-[120px] lg:px-16 bg-gray-50 overflow-x-hidden w-full max-w-full">
         <div className="max-w-7xl mx-auto w-full">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black text-center mb-8 sm:mb-12">Testimonials</h2>
           <div className="relative w-full max-w-3xl mx-auto overflow-hidden">
@@ -519,7 +513,7 @@ export default function Home() {
             <div className="flex justify-center lg:-translate-y-12 lg:-translate-x-2 transition-transform">
               <video
                 src="/lastvideo.mp4"
-                className="w-full max-w-[200px] sm:max-w-[380px] lg:max-w-[320px] rounded-xl"
+                className="w-full max-w-[200px] sm:max-w-[380px] lg:max-w-[300px] rounded-xl"
                 autoPlay
                 loop
                 muted
